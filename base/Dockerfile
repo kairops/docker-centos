@@ -1,4 +1,4 @@
-# Copyright (c) 2018 Red Panda CI Project
+# Copyright (c) 2018 The KairOps Project
 #
 # Docker CentOS: Base with sshd running by default
 #
