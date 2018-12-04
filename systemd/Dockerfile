@@ -8,7 +8,7 @@ FROM kairops/docker-centos:java
 
 RUN touch /var/lib/rpm/* && \
     yum install -y epel-release && \
-    yum install -y daemonize && \
+    yum install -y daemonize java-1.7.0-openjdk-devel ruby && \
     yum clean all
 
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == systemd-tmpfiles-setup.service ] || rm -f $i; done); \
